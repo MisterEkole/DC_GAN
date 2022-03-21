@@ -34,7 +34,7 @@ The model was trained on abstract images dataset from kaggle. The goal here was 
 * A few transpose convolutional layers
 * A last output layer with tanh activation function
 
-### Dependenciec
+### Dependencies
 * Pytorch
 * Numpy
 * Google Colab
