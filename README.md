@@ -12,15 +12,23 @@ A GAN is made up of two parts:
 This repository presents an implementation in pytorch of a DCGAN(Deep Convolutional Generative Adversarial Network); a basic GAN with generator and discriminator being deep convnet
 The model was trained on abstract images dataset from kaggle. The goal here was to use DCGAN to generate abstract  fake images from real ones.
 
+![alt text](https://github.com/MisterEkole/DC_GAN/blob/master/assets/svhn_dcgan.png)
+
 ### Model Architecture
 
+
 #### Discriminator
+
+![alt text](https://github.com/MisterEkole/DC_GAN/blob/master/assets/conv_discriminator.png)
+
 * This is a ConvNet without any pooling layer.
 * The inputs of the discriminator are 32*32*3 Tensor images
 * A few convolution hidden layers
 * A fully connected layer with BCEWithLogitsLoss for output
 
 #### Generator
+
+![alt text](https://github.com/MisterEkole/DC_GAN/blob/master/assets/conv_generator.png)
 * A fully connected input layer reshaped into a deep and narrow layer 4*4*512
 * BatchNormalisation and LeakyRelu activation function
 * A few transpose convolutional layers
